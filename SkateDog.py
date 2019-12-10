@@ -218,7 +218,8 @@ class SkateDog(arcade.View):
         self.window.show_view(self.gOver)
 
     def win(self):
-        self.gameOver()
+        self.gOver = GameOver()
+        self.window.show_view(self.gOver)
 
     def setup(self):
         my_map = arcade.read_tiled_map("maps/my-map1.tmx", 1)
